@@ -84,12 +84,32 @@
                                     <outletCollection property="gestureRecognizers" destination="6yY-b4-pHP" appends="YES" id="Xmu-Cl-ZAh"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the graph to change the value." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-zm-Zuk">
+                                <rect key="frame" x="8" y="631" width="359" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="mV1-GU-XZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="0.50494970034246578" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ilT-tb-33z">
+                                <rect key="frame" x="165" y="579" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="k8s-Li-VbY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1271293485812092" green="0.21373176020876988" blue="0.31548394097222221" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XOZ-w4-c5U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="J0j-U4-VMo"/>
+                            <constraint firstItem="eT5-zm-Zuk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="LTn-xm-vb4"/>
+                            <constraint firstAttribute="trailing" secondItem="eT5-zm-Zuk" secondAttribute="trailing" constant="8" id="Q34-PT-nub"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eT5-zm-Zuk" secondAttribute="bottom" constant="20" id="aN0-CA-AnM"/>
+                            <constraint firstItem="ilT-tb-33z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUC-eO-g3k"/>
                             <constraint firstAttribute="trailing" secondItem="XOZ-w4-c5U" secondAttribute="trailing" id="idI-np-4jQ"/>
                             <constraint firstItem="XOZ-w4-c5U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="srC-IX-KFF"/>
+                            <constraint firstItem="eT5-zm-Zuk" firstAttribute="top" secondItem="ilT-tb-33z" secondAttribute="bottom" constant="8" id="xk7-Sy-Zk7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -106,4 +126,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="44" height="44"/>
+    </resources>
 </document>
